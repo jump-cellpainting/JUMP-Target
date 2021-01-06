@@ -8,7 +8,7 @@ The `JUMP-Target` set of perturbations comprises three lists of perturbations
 
 Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs corresponding to the same set of 175 genes, of which 160 are targets of compounds in `JUMP-Target-Compound`.
 
-Each 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
+Each of the 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
 
 The target annotations were obtained from https://clue.io/repurposing. 
 
