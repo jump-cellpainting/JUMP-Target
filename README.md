@@ -4,6 +4,6 @@ compounds with are in duplicate, all other compounds are in singlicate. The reco
 compounds is `5 uM`.
 
 There are three types of positive controls in this list
-- `poscon_orf`: compounds and genes that correlate strongly in previous CellPainting experiments.
+- `poscon_orf`: compounds and genes that correlate strongly in previous Cell Painting experiments.
 - `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/)
 - `poscon_diverse`: pairs of compounds with diverse profiles
