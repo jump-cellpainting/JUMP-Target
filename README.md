@@ -3,9 +3,14 @@
 The `JUMP-Target` set of perturbations comprises three lists of perturbations
 
 1. `JUMP-Target-Compound` – a list of compounds with diverse targets that fit on a single 384-well plate.
-1. `JUMP-Target-ORF` – a list of cDNA sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
+1. `JUMP-Target-ORF` – a list of ORF sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 1. `JUMP-Target-CRISPR` – a list of sgRNA sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 
+Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs corresponding to the same set of 175 genes, of which 160 are targets of compounds in `JUMP-Target-Compound`.
+
+The target annotations were obtained from https://clue.io/repurposing. 
+
+This resource was created through the [JUMP-Cell Painting Consortium](https://jump-cellpainting.broadinstitute.org/).
 
 ## JUMP-Target-Compound
 
@@ -21,7 +26,6 @@ There are
 - n=2 replicate wells for each of 14 `poscon_diverse` compounds
 - n=64 DMSO wells
 - n=1 well for the remaining compounds
-
 
 ### Files
 
@@ -48,7 +52,7 @@ There are
 
 ## JUMP-Target-CRISPR
 
-There are 335 sgRNAs (corresponding to 160 genes) in total, of which 88 sgRNAs are included as controls serving different goals
+There are 335 sgRNAs (corresponding to 175 genes) in total, of which 88 sgRNAs are included as controls serving different goals
 
 1. `poscon_orf`: the corresponding genes targets of the `poscon_orf` compounds. Total: 3 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 5 sgRNAs.
 1. `poscon_cp`: the corresponding genes targets of the `poscon_cp` compounds. Total: 13 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 25 sgRNAs.
@@ -113,6 +117,4 @@ There are
 | :----- | :---------- |
 | well_position | Well position |
 | broad_sample | ORF id in Broad Institute's Genetic Perturbation Platform database |
-
-
 
