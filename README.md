@@ -14,6 +14,15 @@ The target annotations were obtained from https://clue.io/repurposing.
 
 This resource was created through the [JUMP-Cell Painting Consortium](https://jump-cellpainting.broadinstitute.org/).
 
+- [JUMP-Target-Compound](#jump-target-compound)
+  * [Files](#files)
+- [JUMP-Target-CRISPR](#jump-target-crispr)
+  * [Files](#files-1)
+- [JUMP-Target-ORF](#jump-target-orf)
+  * [Files](#files-2)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## JUMP-Target-Compound
 
 There are 306 compounds in total, of which 40 are included as controls serving different goals
