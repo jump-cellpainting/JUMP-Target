@@ -2,11 +2,13 @@
 
 The `JUMP-Target` set of perturbations comprises three lists of perturbations
 
-1. `JUMP-Target-Compound` – a list of compounds with diverse targets that fit on a single 384-well plate.
+1. `JUMP-Target-Compound` – a list of compounds with diverse targets.
 1. `JUMP-Target-ORF` – a list of ORF sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 1. `JUMP-Target-CRISPR` – a list of sgRNA sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 
 Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs corresponding to the same set of 175 genes, of which 160 are targets of compounds in `JUMP-Target-Compound`.
+
+Each 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
 
 The target annotations were obtained from https://clue.io/repurposing. 
 
