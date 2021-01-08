@@ -82,7 +82,7 @@ There are
 
 | Column | Description |
 | :----- | :---------- |
-| broad_sample | sgRNA id in Broad Institute's Genetic Perturbation Platform database |
+| broad_sample | sgRNA id in Broad Institute's Genetic Perturbation Platform [database](https://portals.broadinstitute.org/gpp/public/) |
 | gene | Gene targeted by the sgRNA |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
 | control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
@@ -120,7 +120,7 @@ There are
 
 | Column | Description |
 | :----- | :---------- |
-| broad_sample | ORF id in Broad Institute's Genetic Perturbation Platform database |
+| broad_sample | ORF id in Broad Institute's Genetic Perturbation Platform [database](https://portals.broadinstitute.org/gpp/public/) |
 | gene | Gene overexpressed by the ORF |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
 | control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
