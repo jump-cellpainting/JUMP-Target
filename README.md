@@ -6,7 +6,7 @@ The `JUMP-Target` set of perturbations comprises three lists of perturbations
 1. `JUMP-Target-ORF` – a list of ORF sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 1. `JUMP-Target-CRISPR` – a list of sgRNA sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 
-Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs corresponding to a set of 160 genes, each of which 160 are targets of compounds in `JUMP-Target-Compound`. `JUMP-Target-ORF` has perturbations for an additional set of 15 genes that serve as negative controls (below).
+Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs corresponding to a set of 160 genes, each of which are targets of compounds in `JUMP-Target-Compound`. `JUMP-Target-ORF` has perturbations for an additional set of 15 genes that serve as negative controls (below).
 
 Each of the 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
 
@@ -25,7 +25,7 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 ## JUMP-Target-Compound
 
-There are 306 compounds in total, of which 40 are included as controls serving different goals
+There are 306 compounds in total, of which 46 are included as controls serving different goals
 
 1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
 1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
@@ -68,7 +68,7 @@ There are 335 sgRNAs (corresponding to 175 genes) in total, of which 88 sgRNAs a
 1. `poscon_orf`: the corresponding genes targets of the `poscon_orf` compounds. Total: 3 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 5 sgRNAs.
 1. `poscon_cp`: the corresponding genes targets of the `poscon_cp` compounds. Total: 13 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 25 sgRNAs.
 1. `poscon_diverse`: the corresponding genes targets of the `poscon_diverse` compounds. Total: 14 genes x 2 sgRNAs per gene = 28 sgRNAs.
-1. `negcon`: genes that have had weak signatures in previous Cell Painting overexpression experiments (15 genes x 2 sgRNAs per gene = 30 sgRNAs)
+1. `negcon`: 30 unique sgRNAs that serve as negative controls because they are either non-targeting or target intergenic region.
 
 There are
 - n=2 replicate wells for each of `negcon`s, as well as for 1 `poscon_cp` sgRNA, 1 `poscon_orf` sgRNA, and 13 other sgRNAs
