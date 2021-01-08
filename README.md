@@ -83,8 +83,8 @@ There are
 | :----- | :---------- |
 | broad_sample | sgRNA id in Broad Institute's Genetic Perturbation Platform database |
 | gene | Gene targeted by the sgRNA |
-| pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
-| control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
+| pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
+| control_type | Control type – `negcon, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | target_sequence | sgRNA sequence |
 
 [`JUMP-Target_crispr_platemap.tsv`](JUMP-Target_crispr_metadata.tsv)
@@ -119,10 +119,10 @@ There are
 | :----- | :---------- |
 | broad_sample | ORF id in Broad Institute's Genetic Perturbation Platform database |
 | gene | Gene overexpressed by the ORF |
-| pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
-| control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
+| pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
+| control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 
-[`JUMP-Target_crispr_platemap.tsv`](JUMP-Target_crispr_metadata.tsv)
+[`JUMP-Target_orf_platemap.tsv`](JUMP-Target_orf_platemap.tsv)
 
 | Column | Description |
 | :----- | :---------- |
