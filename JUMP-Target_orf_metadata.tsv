@@ -1,4 +1,4 @@
-broad_sample	genes	pert_type	control_type
+broad_sample	gene	pert_type	control_type
 ccsbBroad304_00900	KCNN1	trt	
 ccsbBroad304_07795	SLCO2B1	trt	
 ccsbBroad304_02826	SLC7A11	trt	
@@ -76,6 +76,7 @@ ccsbBroad304_06221	FPR1	trt
 ccsbBroad304_03976	PORCN	trt	
 ccsbBroad304_05821	ANXA1	trt	
 ccsbBroad304_05555	CATSPER4	trt	
+			
 ccsbBroad304_14827	RET	control	poscon_diverse
 ccsbBroad304_02416	TUBB4B	trt	
 ccsbBroad304_07194	GLRA3	trt	
