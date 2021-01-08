@@ -87,6 +87,7 @@ There are
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
 | control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | target_sequence | sgRNA sequence |
+| negcon_control_type | Negative control type – `NO_SITE` or `ONE_INTERGENIC_SITE` |
 
 [`JUMP-Target_crispr_platemap.tsv`](JUMP-Target_crispr_metadata.tsv)
 
