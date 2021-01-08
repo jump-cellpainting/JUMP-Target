@@ -30,6 +30,7 @@ There are 306 compounds in total, of which 46 are included as controls serving d
 1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
 1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
 1. `poscon_diverse`: pairs of compounds that are strongly correlated to each other, and weakly correlated to other `poscon_diverse` pairs, in previous Cell Painting experiments. There are 7 such pairs, so 14 compounds in total.
+1. `negcon`: [DMSO](https://pubchem.ncbi.nlm.nih.gov/compound/Dimethyl-sulfoxide) is the negative control.
 
 The recommended concentration for these compounds is `5 uM`.
 
@@ -84,7 +85,7 @@ There are
 | broad_sample | sgRNA id in Broad Institute's Genetic Perturbation Platform database |
 | gene | Gene targeted by the sgRNA |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
-| control_type | Control type – `negcon, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
+| control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | target_sequence | sgRNA sequence |
 
 [`JUMP-Target_crispr_platemap.tsv`](JUMP-Target_crispr_metadata.tsv)
