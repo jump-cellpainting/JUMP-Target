@@ -107,7 +107,8 @@ All genes have a single corresponding ORF
 1. `negcon`: genes that have had weak signatures in previous Cell Painting overexpression experiments. Total: 15 genes.
 
 There are
-- n=2 replicate wells for each of the 45 controls
+- n=2 replicate wells for each of the 30 poscons
+- n=4 replicate wells for each of the 15 negcons
 - n=1 well for each remaining sgRNAs
 - n=4 empty wells
 
