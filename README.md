@@ -16,6 +16,7 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 - [JUMP-Target-Compound](#jump-target-compound)
   * [Files](#files)
+  * [Broad internal notes](#broad-internal-notes)
 - [JUMP-Target-CRISPR](#jump-target-crispr)
   * [Files](#files-1)
 - [JUMP-Target-ORF](#jump-target-orf)
@@ -61,6 +62,11 @@ There are
 | broad_sample | Compound ID in Broad Institute's compound management database |
 | solvent | Solvent (always DMSO) |
 
+
+### Broad internal notes
+- 306 compounds
+- Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
+- 5 milliMolar 13.75 uL total volume (5 uL dead volume)
 
 ## JUMP-Target-CRISPR
 
@@ -131,4 +137,3 @@ There are
 | :----- | :---------- |
 | well_position | Well position |
 | broad_sample | ORF id in Broad Institute's Genetic Perturbation Platform database |
-
