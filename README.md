@@ -105,7 +105,7 @@ There are
 
 ## JUMP-Target-ORF
 
-There are 175 ORFs (corresponding to 175 genes) in total, of which 45 ORFs (corresponding to 45 genes) are included as controls serving different goals
+There are 175 ORFs (corresponding to 175 genes) in total, of which 45 ORFs (corresponding to 45 genes) are included as controls serving different goals and 130 genes are represented in duplicate on the plate.
 
 All genes have a single corresponding ORF
 
@@ -117,8 +117,9 @@ All genes have a single corresponding ORF
 There are
 - n=2 replicate wells for each of the 30 poscons
 - n=4 replicate wells for each of the 15 negcons
-- n=1 well for each remaining sgRNAs
+- n=2 wells for each remaining ORF (130 of them)
 - n=4 empty wells
+- For a total of 384 wells
 
 ### Files
 
