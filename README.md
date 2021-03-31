@@ -18,6 +18,8 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 - There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-CRISPR` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-CRISPR` respectively)
 - There are two versions os `JUMP-Target-Compound` (`JUMP-Target-Compound-1a` and `JUMP-Target-Compound-1b`). Both have the same set of compounds, but have different Broad sample IDs and different layouts.
 
+
+
 - [JUMP-Target-Compound](#jump-target-compound)
   * [Files](#files)
   * [Broad internal notes](#broad-internal-notes)
@@ -46,7 +48,8 @@ There are
 
 ### Files
 
-[`JUMP-Target-1_compound_metadata.tsv`](JUMP-Target-1_compound_metadata.tsv)
+[`JUMP-Target-1a_compound_metadata.tsv`](JUMP-Target-1a_compound_metadata.tsv)
+[`JUMP-Target-1b_compound_metadata.tsv`](JUMP-Target-1b_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -58,7 +61,8 @@ There are
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
 
-[`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_metadata.tsv)
+[`JUMP-Target-1a_compound_platemap.tsv`](JUMP-Target-1a_compound_metadata.tsv)
+[`JUMP-Target-1b_compound_platemap.tsv`](JUMP-Target-1b_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -69,8 +73,12 @@ There are
 
 ### Broad internal notes
 - 306 compounds
-- Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
-- 5 milliMolar 13.75 uL total volume (5 uL dead volume)
+- `JUMP-Target-1a_Compound`: 
+  - Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
+  - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
+- `JUMP-Target-1b_Compound`: 
+  - Compound Request Number: CR-12908 - placed by Niranj Chandrasekaran - $???
+  - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
 
 ## JUMP-Target-CRISPR
 
