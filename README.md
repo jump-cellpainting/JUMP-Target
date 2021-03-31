@@ -10,9 +10,13 @@ Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs correspondi
 
 Each of the 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
 
-The target annotations were obtained from https://clue.io/repurposing. 
+The target annotations were obtained from https://clue.io/repurposing.
 
 This resource was created through the [JUMP-Cell Painting Consortium](https://jump-cellpainting.broadinstitute.org/).
+
+### Versioning
+- There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-CRISPR` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-CRISPR` respectively)
+- There are two versions os `JUMP-Target-Compound` (`JUMP-Target-Compound-1a` and `JUMP-Target-Compound-1b`). Both have the same set of compounds, but have different Broad sample IDs and different layouts.
 
 - [JUMP-Target-Compound](#jump-target-compound)
   * [Files](#files)
@@ -42,7 +46,7 @@ There are
 
 ### Files
 
-[`JUMP-Target_compound_metadata.tsv`](JUMP-Target_compound_metadata.tsv)
+[`JUMP-Target-1_compound_metadata.tsv`](JUMP-Target-1_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -54,7 +58,7 @@ There are
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
 
-[`JUMP-Target_compound_platemap.tsv`](JUMP-Target_compound_metadata.tsv)
+[`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -84,7 +88,7 @@ There are
 
 ### Files
 
-[`JUMP-Target_crispr_metadata.tsv`](JUMP-Target_crispr_metadata.tsv)
+[`JUMP-Target-1_crispr_metadata.tsv`](JUMP-Target-1_crispr_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -95,7 +99,7 @@ There are
 | target_sequence | sgRNA sequence |
 | negcon_control_type | Negative control type – `NO_SITE` or `ONE_INTERGENIC_SITE` |
 
-[`JUMP-Target_crispr_platemap.tsv`](JUMP-Target_crispr_metadata.tsv)
+[`JUMP-Target-1_crispr_platemap.tsv`](JUMP-Target-1_crispr_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -123,7 +127,7 @@ There are
 
 ### Files
 
-[`JUMP-Target_orf_metadata.tsv`](JUMP-Target_orf_metadata.tsv)
+[`JUMP-Target-1_orf_metadata.tsv`](JUMP-Target-1_orf_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -132,7 +136,7 @@ There are
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
 | control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 
-[`JUMP-Target_orf_platemap.tsv`](JUMP-Target_orf_platemap.tsv)
+[`JUMP-Target-1_orf_platemap.tsv`](JUMP-Target-1_orf_platemap.tsv)
 
 | Column | Description |
 | :----- | :---------- |
