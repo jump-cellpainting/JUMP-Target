@@ -10,9 +10,15 @@ Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs correspondi
 
 Each of the 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
 
-The target annotations were obtained from https://clue.io/repurposing. 
+The target annotations were obtained from https://clue.io/repurposing.
 
 This resource was created through the [JUMP-Cell Painting Consortium](https://jump-cellpainting.broadinstitute.org/).
+
+**Versioning**
+- There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-CRISPR` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-CRISPR` respectively)
+- There are two versions os `JUMP-Target-Compound` (`JUMP-Target-Compound-1` and `JUMP-Target-Compound-2`). Both have the same set of compounds, but have different Broad sample IDs and different layouts. `JUMP-Target-Compound-2`  is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset.
+
+-----
 
 - [JUMP-Target-Compound](#jump-target-compound)
   * [Files](#files)
@@ -42,7 +48,8 @@ There are
 
 ### Files
 
-[`JUMP-Target_compound_metadata.tsv`](JUMP-Target_compound_metadata.tsv)
+[`JUMP-Target-1a_compound_metadata.tsv`](JUMP-Target-1a_compound_metadata.tsv)
+[`JUMP-Target-1b_compound_metadata.tsv`](JUMP-Target-1b_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -54,7 +61,8 @@ There are
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
 
-[`JUMP-Target_compound_platemap.tsv`](JUMP-Target_compound_metadata.tsv)
+[`JUMP-Target-1a_compound_platemap.tsv`](JUMP-Target-1a_compound_metadata.tsv)
+[`JUMP-Target-1b_compound_platemap.tsv`](JUMP-Target-1b_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -65,8 +73,12 @@ There are
 
 ### Broad internal notes
 - 306 compounds
-- Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
-- 5 milliMolar 13.75 uL total volume (5 uL dead volume)
+- `JUMP-Target-1a_Compound`: 
+  - Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
+  - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
+- `JUMP-Target-1b_Compound`: 
+  - Compound Request Number: CR-12908 - placed by Niranj Chandrasekaran - $???
+  - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
 
 ## JUMP-Target-CRISPR
 
@@ -84,7 +96,7 @@ There are
 
 ### Files
 
-[`JUMP-Target_crispr_metadata.tsv`](JUMP-Target_crispr_metadata.tsv)
+[`JUMP-Target-1_crispr_metadata.tsv`](JUMP-Target-1_crispr_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -95,7 +107,7 @@ There are
 | target_sequence | sgRNA sequence |
 | negcon_control_type | Negative control type – `NO_SITE` or `ONE_INTERGENIC_SITE` |
 
-[`JUMP-Target_crispr_platemap.tsv`](JUMP-Target_crispr_metadata.tsv)
+[`JUMP-Target-1_crispr_platemap.tsv`](JUMP-Target-1_crispr_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -123,7 +135,7 @@ There are
 
 ### Files
 
-[`JUMP-Target_orf_metadata.tsv`](JUMP-Target_orf_metadata.tsv)
+[`JUMP-Target-1_orf_metadata.tsv`](JUMP-Target-1_orf_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -132,7 +144,7 @@ There are
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 4 controls |
 | control_type | Control type – `negcon`, `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 
-[`JUMP-Target_orf_platemap.tsv`](JUMP-Target_orf_platemap.tsv)
+[`JUMP-Target-1_orf_platemap.tsv`](JUMP-Target-1_orf_platemap.tsv)
 
 | Column | Description |
 | :----- | :---------- |
