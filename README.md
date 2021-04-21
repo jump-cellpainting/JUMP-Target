@@ -16,7 +16,7 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 **Versioning**
 - There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-CRISPR` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-CRISPR` respectively)
-- There are two versions os `JUMP-Target-Compound` (`JUMP-Target-Compound-1` and `JUMP-Target-Compound-2`). Both have the same set of compounds, but have different Broad sample IDs and different layouts. `JUMP-Target-Compound-2`  is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset.
+- There are two versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound` and `JUMP-Target-2-Compound`). Both have the same set of compounds, but have different Broad sample IDs and different layouts. `JUMP-Target-2-Compound`  is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset.
 
 -----
 
