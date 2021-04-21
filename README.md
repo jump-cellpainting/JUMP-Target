@@ -48,8 +48,8 @@ There are
 
 ### Files
 
-[`JUMP-Target-1a_compound_metadata.tsv`](JUMP-Target-1a_compound_metadata.tsv)
-[`JUMP-Target-1b_compound_metadata.tsv`](JUMP-Target-1b_compound_metadata.tsv)
+[`JUMP-Target-1_compound_metadata.tsv`](JUMP-Target-1_compound_metadata.tsv)
+[`JUMP-Target-2_compound_metadata.tsv`](JUMP-Target-2_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -61,8 +61,8 @@ There are
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
 
-[`JUMP-Target-1a_compound_platemap.tsv`](JUMP-Target-1a_compound_metadata.tsv)
-[`JUMP-Target-1b_compound_platemap.tsv`](JUMP-Target-1b_compound_metadata.tsv)
+[`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_metadata.tsv)
+[`JUMP-Target-2_compound_platemap.tsv`](JUMP-Target-2_compound_metadata.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -73,12 +73,16 @@ There are
 
 ### Broad internal notes
 - 306 compounds
-- `JUMP-Target-1a_Compound`: 
+- `JUMP-Target-1_Compound`: 
   - Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
   - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
-- `JUMP-Target-1b_Compound`: 
+- `JUMP-Target-2_Compound`:
   - Compound Request Number: CR-12908 - placed by Niranj Chandrasekaran - $???
   - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
+  - This plate was created because CDoT was unable to create plates with the same plate map as `JUMP-Target-1` for 
+    the production experiments. Thus, the compounds in `JUMP-Target-2` are identical to the compounds in `JUMP-Target-1`  
+    but the plate maps are different. The `broad sample` IDs of some compounds are also different.
+    - To map the compounds in `JUMP-Target-1` to `JUMP-Target-2` use `InChIKey` for "joining".
 
 ## JUMP-Target-CRISPR
 
