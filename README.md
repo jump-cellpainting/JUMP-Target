@@ -80,8 +80,7 @@ There are
   - Compound Request Number: CR-12908 - placed by Niranj Chandrasekaran - $???
   - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
   - This plate was created because CDoT was unable to create plates with the same plate map as `JUMP-Target-1` for 
-    the production experiments. Thus, the compounds in `JUMP-Target-2` are identical to the compounds in `JUMP-Target-1`  
-    but the plate maps are different. The `broad sample` IDs of some compounds are also different.
+    the production experiments. Thus, the compounds in `JUMP-Target-2` are identical to the compounds in `JUMP-Target-1` but the plate maps are different. The `broad sample` IDs of some compounds are also different.
     - To map the compounds in `JUMP-Target-1` to `JUMP-Target-2` use `InChIKey` for "joining".
 
 ## JUMP-Target-CRISPR
