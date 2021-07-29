@@ -164,3 +164,38 @@ The list of compounds were derived from [Broad's Drug Repurposing Hub](https://c
 4. Three types of positive control compounds and the genes that they target were selected. ([Compound positive controls](https://github.com/jump-cellpainting/JUMP-Target#jump-target-compound), [CRISPR positive controls](https://github.com/jump-cellpainting/JUMP-Target#jump-target-crispr), and [ORF positive controls](https://github.com/jump-cellpainting/JUMP-Target#jump-target-orf)).
 5. To ensure that the compounds and genes selected were available for performing experiments, compounds that were unavailable for purchase from at least one of four compound vendors (Sigma, SelleckChem, Tocris, and MedChemEx) and genes for which genetic reagents were unavailable from [Broad's GPP portal](https://portals.broadinstitute.org/gpp/public/) were filtered out.
 6. Compounds that belong to DEA's list of controlled substances or OPCW's list of chemical weapons precursors were also excluded.
+
+--- 
+
+## Positive control compounds
+
+Based on our experiments with the Target-1 compounds plates, we have identified a list of eight compounds (and also a subset of four compounds) with maximally diverse phenotypes. 
+
+| pert_iname    | InChIKey                    | Vendor URL                                             | clue.io URL                                          | 
+| ------------- | --------------------------- | ------------------------------------------------------ | ---------------------------------------------------- | 
+| **AMG900**    | IVUGFMLRJOCGAS-UHFFFAOYSA-N | https://www.selleckchem.com/products/amg-900.html      | https://clue.io/repurposing-app?q=Name:AMG900        | 
+| NVS-PAK1-1    | OINGHOPGNMYCAB-INIZCTEOSA-N | https://www.medchemexpress.com/NVS-PAK1-1.html         | https://clue.io/repurposing-app?q=Name:NVS-PAK1-1    | 
+| dexamethasone | UREBDLICKHMUKA-CXSFZGCWSA-N | https://www.tocris.com/products/dexamethasone_1126     | https://clue.io/repurposing-app?q=Name:dexamethasone | 
+| **LY2109761** | IHLVSLOZUHKNMQ-UHFFFAOYSA-N | https://www.selleckchem.com/products/ly2109761.html    | https://clue.io/repurposing-app?q=Name:LY2109761     | 
+| FK-866        | KPBNHDGDUADAGP-VAWYXSNFSA-N | https://www.selleckchem.com/products/apo866-fk866.html | https://clue.io/repurposing-app?q=Name:FK-866        |
+| **quinidine** | LOUPRKONTZGTKE-LHHVKLHASA-N | https://www.medchemexpress.com/Quinidine.html          | https://clue.io/repurposing-app?q=Name:quinidine     |
+| **TC-S-7004** | CQKBSRPVZZLCJE-UHFFFAOYSA-N | https://www.tocris.com/products/tc-s-7004_5088         | https://clue.io/repurposing-app?q=Name:TC-S-7004     |
+| aloxistatin   | SRVFFFJZQVENJC-IHRRRGAJSA-N | https://www.medchemexpress.com/Aloxistatin.html        | https://clue.io/repurposing-app?q=Name:aloxistatin   |
+
+Compound names in **bold** is the subset of four compounds. 
+
+### Layout
+Our recommendation is to have at least four replicates of the eight (or four) compounds spread across the plate. If such a layout is not possible, then we recommend the following for a 384-well plate.
+
+| pert_iname    | well_position    |
+| ------------- | ---------------- |
+| **AMG900**    | B1, J1, F24, N24 |
+| NVS-PAK1-1    | F1, N1, B24, J24 |
+| dexamethasone | C1, K1, G24, O24 |
+| **LY2109761** | E1, M1, A24, I24 |
+| FK-866        | D1, L1, H24, P24 |
+| **quinidine** | G1, O1, C24, K24 |
+| **TC-S-7004** | H1, P1, D24, L24 |
+| aloxistatin   | A1, I1, E24, M24 |
+
+For a 1536-well plate, the layout is similar, but in four quadrants.
