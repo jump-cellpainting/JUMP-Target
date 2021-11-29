@@ -46,6 +46,8 @@ There are
 - n=64 DMSO wells
 - n=1 well for the remaining compounds
 
+The company Specs has assembled the compounds for purchase; for info contact tamara.baptist@specs.net
+
 ### Files
 
 [`JUMP-Target-1_compound_metadata.tsv`](JUMP-Target-1_compound_metadata.tsv)
