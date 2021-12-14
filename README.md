@@ -63,8 +63,8 @@ The company Specs has assembled the compounds for purchase; for info contact tam
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
 
-[`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_metadata.tsv)
-[`JUMP-Target-2_compound_platemap.tsv`](JUMP-Target-2_compound_metadata.tsv)
+[`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_platemap.tsv)
+[`JUMP-Target-2_compound_platemap.tsv`](JUMP-Target-2_compound_platemap.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -112,7 +112,7 @@ There are
 | target_sequence | sgRNA sequence |
 | negcon_control_type | Negative control type – `NO_SITE` or `ONE_INTERGENIC_SITE` |
 
-[`JUMP-Target-1_crispr_platemap.tsv`](JUMP-Target-1_crispr_metadata.tsv)
+[`JUMP-Target-1_crispr_platemap.tsv`](JUMP-Target-1_crispr_platemap.tsv)
 
 | Column | Description |
 | :----- | :---------- |
