@@ -201,3 +201,25 @@ Our recommendation is to have at least four replicates of the eight (or four) co
 | aloxistatin   | A1, I1, E24, M24 |
 
 For a 1536-well plate, the layout is similar, but in four quadrants.
+
+## Control mappings
+
+
+### poscon_diverse
+
+| ID                     |   pair | target_gene   | InChIKey       | broad_compound_id      | broad_orf_id       | broad_crispr_id_1   | broad_crispr_id_2   |
+|:-----------------------|-------:|:--------------|:---------------|:-----------------------|:-------------------|:--------------------|:--------------------|
+| poscon_diverse-pair0-1 |      0 | RET           | XKFTZKGMDDZMJI | BRD-K07881437-001-03-8 | ccsbBroad304_14827 | BRDN0001058343      | BRDN0001058011      |
+| poscon_diverse-pair0-2 |      0 | TUBB          | MTJHLONVHHPNSI | BRD-K23363278-001-02-1 | ccsbBroad304_05206 | BRDN0001489809      | BRDN0001488241      |
+| poscon_diverse-pair1-1 |      1 | HSP90AA1      | RVAQIUULWULRNW | BRD-K38852836-001-04-9 | ccsbBroad304_06412 | BRDN0001488886      | BRDN0001483257      |
+| poscon_diverse-pair1-2 |      1 | PIK3CG        | CWHUFRVAEUJCEF | BRD-K42191735-001-08-7 | ccsbBroad304_14762 | BRDN0001065162      | BRDN0001065152      |
+| poscon_diverse-pair2-1 |      2 | NAMPT         | KPBNHDGDUADAGP | BRD-K58550667-001-08-7 | ccsbBroad304_07557 | BRDN0001484730      | BRDN0001481327      |
+| poscon_diverse-pair2-2 |      2 | AKT1          | AFJRDFWMXUECEW | BRD-K25412176-001-01-9 | ccsbBroad304_14538 | BRDN0001054985      | BRDN0000562836      |
+| poscon_diverse-pair3-1 |      3 | KRAS          | DHMTURDWPRKSOA | BRD-K41599323-001-02-3 | ccsbBroad304_16173 | BRDN0001054815      | BRDN0000563627      |
+| poscon_diverse-pair3-2 |      3 | PAK4          | AYCPARAPKDAOEN | BRD-K37764012-001-03-3 | ccsbBroad304_02392 | BRDN0001145608      | BRDN0001147629      |
+| poscon_diverse-pair4-1 |      4 | DNMT3A        | NMUSYJAQQFHJEW | BRD-K03406345-001-21-1 | ccsbBroad304_00454 | BRDN0001066838      | BRDN0001066751      |
+| poscon_diverse-pair4-2 |      4 | IMPDH1        | WYWHKKSPHMUBEB | BRD-K49350383-001-13-7 | ccsbBroad304_06451 | BRDN0001489452      | BRDN0001488805      |
+| poscon_diverse-pair5-1 |      5 | CDK7          | HUXYBQXJVXOMKX | BRD-K64800655-001-09-0 | ccsbBroad304_00280 | BRDN0001162216      | BRDN0001147450      |
+| poscon_diverse-pair5-2 |      5 | PLK1          | XQVVPGYIWAGRNI | BRD-K64890080-001-02-1 | ccsbBroad304_14770 | BRDN0001144995      | BRDN0001054037      |
+| poscon_diverse-pair6-1 |      6 | CHEK2         | IAYGCINLNONXHY | BRD-K86525559-001-07-8 | ccsbBroad304_14989 | BRDN0000585854      | BRDN0001145610      |
+| poscon_diverse-pair6-2 |      6 | GABRB2        | ALBKMJDFBZVHAK | BRD-K33882852-003-02-8 | ccsbBroad304_00607 | BRDN0001486784      | BRDN0001482741      |
