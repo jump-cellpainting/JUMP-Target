@@ -34,8 +34,8 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 There are 306 compounds in total, of which 46 are included as controls serving different goals
 
-1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
-1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
+1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding 3 genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
+1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding 13 genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
 1. `poscon_diverse`: pairs of compounds that are strongly correlated to each other, and weakly correlated to other `poscon_diverse` pairs, in previous Cell Painting experiments. There are 7 such pairs, so 14 compounds in total.
 1. `negcon`: [DMSO](https://pubchem.ncbi.nlm.nih.gov/compound/Dimethyl-sulfoxide) is the negative control.
 
