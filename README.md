@@ -34,8 +34,8 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 There are 306 compounds in total, of which 46 are included as controls serving different goals
 
-1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
-1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
+1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding 3 genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
+1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding 13 genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
 1. `poscon_diverse`: pairs of compounds that are strongly correlated to each other, and weakly correlated to other `poscon_diverse` pairs, in previous Cell Painting experiments. There are 7 such pairs, so 14 compounds in total.
 1. `negcon`: [DMSO](https://pubchem.ncbi.nlm.nih.gov/compound/Dimethyl-sulfoxide) is the negative control.
 
@@ -201,3 +201,46 @@ Our recommendation is to have at least four replicates of the eight (or four) co
 | aloxistatin   | A1, I1, E24, M24 |
 
 For a 1536-well plate, the layout is similar, but in four quadrants.
+
+## Control mappings
+
+
+### poscon_diverse
+
+| ID                     |   pair | target_gene   | InChIKey       | broad_compound_id      | broad_orf_id       | broad_crispr_id_1   | broad_crispr_id_2   |
+|:-----------------------|-------:|:--------------|:---------------|:-----------------------|:-------------------|:--------------------|:--------------------|
+| poscon_diverse-pair0-1 |      0 | RET           | XKFTZKGMDDZMJI | BRD-K07881437-001-03-8 | ccsbBroad304_14827 | BRDN0001058343      | BRDN0001058011      |
+| poscon_diverse-pair0-2 |      0 | TUBB          | MTJHLONVHHPNSI | BRD-K23363278-001-02-1 | ccsbBroad304_05206 | BRDN0001489809      | BRDN0001488241      |
+| poscon_diverse-pair1-1 |      1 | HSP90AA1      | RVAQIUULWULRNW | BRD-K38852836-001-04-9 | ccsbBroad304_06412 | BRDN0001488886      | BRDN0001483257      |
+| poscon_diverse-pair1-2 |      1 | PIK3CG        | CWHUFRVAEUJCEF | BRD-K42191735-001-08-7 | ccsbBroad304_14762 | BRDN0001065162      | BRDN0001065152      |
+| poscon_diverse-pair2-1 |      2 | NAMPT         | KPBNHDGDUADAGP | BRD-K58550667-001-08-7 | ccsbBroad304_07557 | BRDN0001484730      | BRDN0001481327      |
+| poscon_diverse-pair2-2 |      2 | AKT1          | AFJRDFWMXUECEW | BRD-K25412176-001-01-9 | ccsbBroad304_14538 | BRDN0001054985      | BRDN0000562836      |
+| poscon_diverse-pair3-1 |      3 | KRAS          | DHMTURDWPRKSOA | BRD-K41599323-001-02-3 | ccsbBroad304_16173 | BRDN0001054815      | BRDN0000563627      |
+| poscon_diverse-pair3-2 |      3 | PAK4          | AYCPARAPKDAOEN | BRD-K37764012-001-03-3 | ccsbBroad304_02392 | BRDN0001145608      | BRDN0001147629      |
+| poscon_diverse-pair4-1 |      4 | DNMT3A        | NMUSYJAQQFHJEW | BRD-K03406345-001-21-1 | ccsbBroad304_00454 | BRDN0001066838      | BRDN0001066751      |
+| poscon_diverse-pair4-2 |      4 | IMPDH1        | WYWHKKSPHMUBEB | BRD-K49350383-001-13-7 | ccsbBroad304_06451 | BRDN0001489452      | BRDN0001488805      |
+| poscon_diverse-pair5-1 |      5 | CDK7          | HUXYBQXJVXOMKX | BRD-K64800655-001-09-0 | ccsbBroad304_00280 | BRDN0001162216      | BRDN0001147450      |
+| poscon_diverse-pair5-2 |      5 | PLK1          | XQVVPGYIWAGRNI | BRD-K64890080-001-02-1 | ccsbBroad304_14770 | BRDN0001144995      | BRDN0001054037      |
+| poscon_diverse-pair6-1 |      6 | CHEK2         | IAYGCINLNONXHY | BRD-K86525559-001-07-8 | ccsbBroad304_14989 | BRDN0000585854      | BRDN0001145610      |
+| poscon_diverse-pair6-2 |      6 | GABRB2        | ALBKMJDFBZVHAK | BRD-K33882852-003-02-8 | ccsbBroad304_00607 | BRDN0001486784      | BRDN0001482741      |
+
+### Other poscons
+
+| ID            | target_gene   | broad_compound_id_1    | broad_compound_id_2    | broad_orf_id       | broad_crispr_id_1   | broad_crispr_id_2   |
+|:--------------|:--------------|:-----------------------|:-----------------------|:-------------------|:--------------------|:--------------------|
+| poscon_cp-00  | AURKB         | BRD-K21728777-001-02-3 | BRD-K55966568-001-09-6 | ccsbBroad304_14932 | BRDN0001054845      | BRDN0000562944      |
+| poscon_cp-01  | BRD4          | BRD-K13094524-001-04-2 | BRD-K12502280-001-11-4 | ccsbBroad304_11738 | BRDN0000733514      | BRDN0001146786      |
+| poscon_cp-02  | CLK1          | BRD-K66430217-001-03-8 | BRD-K97072811-001-11-4 | ccsbBroad304_00326 | BRDN0001147209      | BRDN0001146512      |
+| poscon_cp-03  | DYRK1B        | BRD-K89517477-001-01-4 | BRD-K80935598-001-01-1 | ccsbBroad304_14931 | BRDN0001149482      | BRDN0001149418      |
+| poscon_cp-04  | ERBB2         | BRD-K76908866-001-07-6 | BRD-K61642990-001-01-0 | ccsbBroad304_14631 | BRDN0001148320      | BRDN0000579738      |
+| poscon_cp-05  | EZH2          | BRD-K91535048-001-01-2 | BRD-K26989966-001-04-3 | ccsbBroad304_00526 | BRDN0001057455      |                     |
+| poscon_cp-06  | FLT3          | BRD-K90747162-001-01-4 | BRD-K91283740-003-01-6 | ccsbBroad304_14644 | BRDN0001145324      | BRDN0001149376      |
+| poscon_cp-07  | HDAC3         | BRD-K61688984-001-02-9 | BRD-K61397605-001-01-8 | ccsbBroad304_07311 | BRDN0000582721      | BRDN0000733096      |
+| poscon_cp-08  | IGF1R         | BRD-K15179513-001-04-2 | BRD-K24696047-001-02-3 | ccsbBroad304_14671 | BRDN0001065819      | BRDN0001065728      |
+| poscon_cp-09  | JAK1          | BRD-K16803204-001-01-6 | BRD-K53972329-001-01-3 | ccsbBroad304_14679 | BRDN0001065674      | BRDN0001065858      |
+| poscon_cp-10  | MET           | BRD-K73319509-001-08-0 | BRD-K19477839-001-07-6 | ccsbBroad304_14696 | BRDN0000734703      | BRDN0001065558      |
+| poscon_cp-11  | PAK1          | BRD-K19333160-001-01-3 | BRD-K28132190-001-02-0 | ccsbBroad304_01144 | BRDN0001145958      | BRDN0001147867      |
+| poscon_cp-12  | USP1          | BRD-K93942811-001-01-3 | BRD-K81197548-003-01-4 | ccsbBroad304_01760 | BRDN0001487607      | BRDN0001484218      |
+| poscon_orf-00 | BRAF          | BRD-K73789395-001-09-9 | BRD-K62810658-001-11-4 | ccsbBroad304_16175 | BRDN0001054801      | BRDN0000562882      |
+| poscon_orf-01 | CDK2          | BRD-K50836978-001-03-3 | BRD-K07762753-001-05-1 | ccsbBroad304_14572 | BRDN0001147786      | BRDN0001148950      |
+| poscon_orf-02 | MAPK14        | BRD-K54330070-001-19-6 | BRD-A37704979-001-12-3 | ccsbBroad304_00371 | BRDN0001148417      |                     |
