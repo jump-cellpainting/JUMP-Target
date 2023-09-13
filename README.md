@@ -2,7 +2,7 @@
 
 The `JUMP-Target` set of perturbations comprises three lists of perturbations
 
-1. `JUMP-Target-Compound` – a list of compounds with diverse targets.
+1. `JUMP-Target-Compound` – a list of compounds with diverse targets. See also [JUMP-MOA](https://github.com/jump-cellpainting/JUMP-MOA) for a similar compound set.
 1. `JUMP-Target-ORF` – a list of ORF sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 1. `JUMP-Target-CRISPR` – a list of sgRNA sequences corresponding to genes that are targets of compounds from `JUMP-Target-Compound`.
 
