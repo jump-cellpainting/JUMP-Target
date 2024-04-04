@@ -32,7 +32,7 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 ## JUMP-Target-Compound
 
-There are 303 compounds in total, of which 46 are included as controls serving different goals
+There are [301](https://github.com/jump-cellpainting/JUMP-Target/issues/9) compounds in total, of which 46 are included as controls serving different goals
 
 1. `poscon_orf`: compounds that correlate strongly with (overexpressed) genes in previous Cell Painting experiments. There are 6 such compounds, and their corresponding 3 genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`
 1. `poscon_cp`: compounds with a strong association with the genes that they target, according to [ChemicalProbes.org](https://www.chemicalprobes.org/). There are 26 such compounds, and their corresponding 13 genes are included in `JUMP-Target-ORF` and `JUMP-Target-CRISPR`.
@@ -79,7 +79,7 @@ See https://github.com/jump-cellpainting/JUMP-Target/pull/32 for details about t
 
 
 ### Broad internal notes
-- 303 compounds
+- [301](https://github.com/jump-cellpainting/JUMP-Target/issues/9) compounds
 - `JUMP-Target-1_Compound`: 
   - Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
   - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
