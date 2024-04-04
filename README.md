@@ -62,6 +62,11 @@ The company Specs has assembled the compounds for purchase; for info contact tam
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
+| smiles_standardized | Standardized SMILES using [JUMP-CP Standardizer](https://github.com/jump-cellpainting/compound-annotator/blob/79596e411fc119b2b71970a8b698ce33658f55a6/StandardizeMolecule.py) |
+| InChI_standardized | InChI corresponding to  `smiles_standardized` |
+| InChIKey_standardized | InChIKey generated from `InChI_standardized` |
+
+See https://github.com/jump-cellpainting/JUMP-Target/pull/32 for details about the the `*_standardized` columns.
 
 [`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_platemap.tsv)
 [`JUMP-Target-2_compound_platemap.tsv`](JUMP-Target-2_compound_platemap.tsv)
