@@ -55,18 +55,17 @@ The company Specs has assembled the compounds for purchase; for info contact tam
 
 | Column | Description |
 | :----- | :---------- |
-| InChIKey | [International Chemical Identifier](https://en.wikipedia.org/wiki/International_Chemical_Identifier) |
 | pert_iname | Compound name |
 | pubchem_cid    | PubChem ID e.g. [`72716071`](https://pubchem.ncbi.nlm.nih.gov/compound/72716071) |
 | target | Gene target |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
-| smiles_standardized | Standardized SMILES using [JUMP-CP Standardizer](https://github.com/jump-cellpainting/compound-annotator/blob/79596e411fc119b2b71970a8b698ce33658f55a6/StandardizeMolecule.py) |
-| InChI_standardized | InChI corresponding to  `smiles_standardized` |
-| InChIKey_standardized | InChIKey generated from `InChI_standardized` |
+| InChI | [International Chemical Identifier](https://en.wikipedia.org/wiki/International_Chemical_Identifier) corresponding to `smiles`|
+| InChIKey | InChIKey generated from `InChI` |
 
-See https://github.com/jump-cellpainting/JUMP-Target/pull/32 for details about the the `*_standardized` columns.
+`smiles` was standardized using [JUMP-CP Standardizer](https://github.com/broadinstitute/monorepo/blob/912315df698cc0f3e9daadcd6ef994a7af94fbdd/libs/smiles/src/smiles/standardize_smiles.py).
+See https://github.com/jump-cellpainting/JUMP-Target/pull/34 for details about the standardization.
 
 [`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_platemap.tsv)
 [`JUMP-Target-2_compound_platemap.tsv`](JUMP-Target-2_compound_platemap.tsv)
