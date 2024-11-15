@@ -48,7 +48,7 @@ The company Specs has assembled the compounds for purchase; for info contact tam
 | :----- | :---------- |
 | pert_iname | Compound name |
 | pubchem_cid    | PubChem ID e.g. [`72716071`](https://pubchem.ncbi.nlm.nih.gov/compound/72716071) |
-| target | Gene target |
+| target_list | List of genes targeted by the compound |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
