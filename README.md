@@ -16,19 +16,10 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 **Versioning**
 - There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-ORF` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-ORF` respectively)
-- There are two versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound` and `JUMP-Target-2-Compound`). Both have the same set of compounds, but have different Broad sample IDs and different layouts. `JUMP-Target-2-Compound`  is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset.
+- There are two versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound` and `JUMP-Target-2-Compound`). Both have the same set of compounds, but have different `broad_sample` IDs and different layouts. `JUMP-Target-2-Compound` is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset. While the `broad_sample` IDs differ between versions, the compounds can be matched between versions using their `InChIKey` values, which remain identical for the same compound.
 
 -----
 
-- [JUMP-Target-Compound](#jump-target-compound)
-  * [Files](#files)
-  * [Broad internal notes](#broad-internal-notes)
-- [JUMP-Target-CRISPR](#jump-target-crispr)
-  * [Files](#files-1)
-- [JUMP-Target-ORF](#jump-target-orf)
-  * [Files](#files-2)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## JUMP-Target-Compound
 
@@ -57,7 +48,7 @@ The company Specs has assembled the compounds for purchase; for info contact tam
 | :----- | :---------- |
 | pert_iname | Compound name |
 | pubchem_cid    | PubChem ID e.g. [`72716071`](https://pubchem.ncbi.nlm.nih.gov/compound/72716071) |
-| target | Gene target |
+| target_list | List of genes targeted by the compound |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
@@ -93,10 +84,14 @@ See https://github.com/jump-cellpainting/JUMP-Target/pull/34 for details about t
 
 There are 335 sgRNAs (corresponding to 175 genes) in total, of which 88 sgRNAs are included as controls serving different goals
 
-1. `poscon_orf`: the corresponding genes targets of the `poscon_orf` compounds. Total: 3 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 5 sgRNAs.
-1. `poscon_cp`: the corresponding genes targets of the `poscon_cp` compounds. Total: 13 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 25 sgRNAs.
+1. `poscon_orf`: the corresponding genes targets of the `poscon_orf` compounds. Total: 3 genes, where 2 genes have 2 sgRNAs each and 1 gene has 1 sgRNA = 5 sgRNAs total.
+1. `poscon_cp`: the corresponding genes targets of the `poscon_cp` compounds. Total: 13 genes, where 12 genes have 2 sgRNAs each and 1 gene has 1 sgRNA = 25 sgRNAs total.
 1. `poscon_diverse`: the corresponding genes targets of the `poscon_diverse` compounds. Total: 14 genes x 2 sgRNAs per gene = 28 sgRNAs.
 1. `negcon`: 30 unique sgRNAs that serve as negative controls because they are either non-targeting (`NO_SITE`) or target intergenic region (`ONE_INTERGENIC_SITE`). `negcon` sgRNAs have an additional annotation e.g. `NO_SITE (5 zeros)`. The number of zeros indicates how deep into the ["threat matrix"](https://portals.broadinstitute.org/gpp/public/software/sgrna-scoring-help#spec) a particular sgRNA makes it before a single match is found. An sgRNA `negcon` with higher number of zeros is less likely to have off-target effects and therefore may be a better negative control.
+
+For the remaining treatment genes (non-controls):
+- 117 genes have 2 sgRNAs each
+- 13 genes have 1 sgRNA each
 
 There are
 - n=2 replicate wells for each of `negcon`s, as well as for 1 `poscon_cp` sgRNA, 1 `poscon_orf` sgRNA, and 13 other sgRNAs
