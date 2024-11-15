@@ -16,19 +16,10 @@ This resource was created through the [JUMP-Cell Painting Consortium](https://ju
 
 **Versioning**
 - There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-ORF` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-ORF` respectively)
-- There are two versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound` and `JUMP-Target-2-Compound`). Both have the same set of compounds, but have different Broad sample IDs and different layouts. `JUMP-Target-2-Compound`  is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset.
+- There are two versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound` and `JUMP-Target-2-Compound`). Both have the same set of compounds, but have different `broad_sample` IDs and different layouts. `JUMP-Target-2-Compound` is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset. While the `broad_sample` IDs differ between versions, the compounds can be matched between versions using their `InChIKey` values, which remain identical for the same compound.
 
 -----
 
-- [JUMP-Target-Compound](#jump-target-compound)
-  * [Files](#files)
-  * [Broad internal notes](#broad-internal-notes)
-- [JUMP-Target-CRISPR](#jump-target-crispr)
-  * [Files](#files-1)
-- [JUMP-Target-ORF](#jump-target-orf)
-  * [Files](#files-2)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## JUMP-Target-Compound
 
