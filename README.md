@@ -93,10 +93,14 @@ See https://github.com/jump-cellpainting/JUMP-Target/pull/34 for details about t
 
 There are 335 sgRNAs (corresponding to 175 genes) in total, of which 88 sgRNAs are included as controls serving different goals
 
-1. `poscon_orf`: the corresponding genes targets of the `poscon_orf` compounds. Total: 3 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 5 sgRNAs.
-1. `poscon_cp`: the corresponding genes targets of the `poscon_cp` compounds. Total: 13 genes x 2 sgRNAs per gene (except for one gene which has a single sgRNA) = 25 sgRNAs.
+1. `poscon_orf`: the corresponding genes targets of the `poscon_orf` compounds. Total: 3 genes, where 2 genes have 2 sgRNAs each and 1 gene has 1 sgRNA = 5 sgRNAs total.
+1. `poscon_cp`: the corresponding genes targets of the `poscon_cp` compounds. Total: 13 genes, where 12 genes have 2 sgRNAs each and 1 gene has 1 sgRNA = 25 sgRNAs total.
 1. `poscon_diverse`: the corresponding genes targets of the `poscon_diverse` compounds. Total: 14 genes x 2 sgRNAs per gene = 28 sgRNAs.
 1. `negcon`: 30 unique sgRNAs that serve as negative controls because they are either non-targeting (`NO_SITE`) or target intergenic region (`ONE_INTERGENIC_SITE`). `negcon` sgRNAs have an additional annotation e.g. `NO_SITE (5 zeros)`. The number of zeros indicates how deep into the ["threat matrix"](https://portals.broadinstitute.org/gpp/public/software/sgrna-scoring-help#spec) a particular sgRNA makes it before a single match is found. An sgRNA `negcon` with higher number of zeros is less likely to have off-target effects and therefore may be a better negative control.
+
+For the remaining treatment genes (non-controls):
+- 117 genes have 2 sgRNAs each
+- 13 genes have 1 sgRNA each
 
 There are
 - n=2 replicate wells for each of `negcon`s, as well as for 1 `poscon_cp` sgRNA, 1 `poscon_orf` sgRNA, and 13 other sgRNAs
