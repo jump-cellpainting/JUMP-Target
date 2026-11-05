@@ -10,16 +10,16 @@ Both `JUMP-Target-ORF` and `JUMP-Target-CRISPR` have sgRNAs and ORFs correspondi
 
 Each of the 3 lists fit on a single 384-well plate; the suggested plate layouts are provided (below).
 
-The target annotations were obtained from https://clue.io/repurposing.
+The target annotations were obtained from <https://clue.io/repurposing>.
 
 This resource was created through the [JUMP-Cell Painting Consortium](https://jump-cellpainting.broadinstitute.org/).
 
 **Versioning**
+
 - There's a single version for the `JUMP-Target-CRISPR` and `JUMP-Target-ORF` plates  (`JUMP-Target-1-CRISPR` and `JUMP-Target-1-ORF` respectively)
-- There are two versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound` and `JUMP-Target-2-Compound`). Both have the same set of compounds, but have different `broad_sample` IDs and different layouts. `JUMP-Target-2-Compound` is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset. While the `broad_sample` IDs differ between versions, the compounds can be matched between versions using their `InChIKey` values, which remain identical for the same compound.
+- There are three versions of `JUMP-Target-Compound` (`JUMP-Target-1-Compound`, `JUMP-Target-2-Compound`, and `JUMP-Target-3-Compound`). They same set of compounds, but have different `broad_sample` IDs and different layouts. `JUMP-Target-2-Compound` is used in the production of the [JUMP dataset](https://jump-cellpainting.broadinstitute.org/results). We recommend using this layout because it will remove layout as a potential confounder when matching against the JUMP dataset. While the `broad_sample` IDs differ between versions, the compounds can be matched between versions using their `InChIKey` values, which remain identical for the same compound. `JUMP-Target-3-Compound` was created for the OASIS consortium as the original 
 
 -----
-
 
 ## JUMP-Target-Compound
 
@@ -33,11 +33,12 @@ There are [301](https://github.com/jump-cellpainting/JUMP-Target/issues/9) compo
 The recommended concentration for these compounds is `5 uM`.
 
 There are
+
 - n=2 replicate wells for each of 14 `poscon_diverse` compounds
 - n=64 DMSO wells
 - n=1 well for the remaining compounds
 
-The company Specs has assembled the compounds for purchase; for info contact tamara.baptist@specs.net
+The company Specs has assembled the compounds for purchase; for info contact <tamara.baptist@specs.net>
 
 ### Files
 
@@ -47,19 +48,20 @@ The company Specs has assembled the compounds for purchase; for info contact tam
 | Column | Description |
 | :----- | :---------- |
 | pert_iname | Compound name |
-| pubchem_cid    | PubChem ID e.g. [`72716071`](https://pubchem.ncbi.nlm.nih.gov/compound/72716071) |
+| pubchem_cid | PubChem ID e.g. [`72716071`](https://pubchem.ncbi.nlm.nih.gov/compound/72716071) |
 | target_list | List of genes targeted by the compound |
 | pert_type | Perturbation type – `trt`: treatment, `control`: one of the 3 controls |
 | control_type | Control type – `poscon_orf`, `poscon_cp`, or `poscon_diverse` |
 | smiles | Simplified molecular-input line-entry system ([SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system)) string |
-| InChI | [International Chemical Identifier](https://en.wikipedia.org/wiki/International_Chemical_Identifier) corresponding to `smiles`|
+| InChI | [International Chemical Identifier](https://en.wikipedia.org/wiki/International_Chemical_Identifier) corresponding to `smiles` |
 | InChIKey | InChIKey generated from `InChI` |
 
 `smiles` was standardized using [JUMP-CP Standardizer](https://github.com/broadinstitute/monorepo/blob/912315df698cc0f3e9daadcd6ef994a7af94fbdd/libs/smiles/src/smiles/standardize_smiles.py).
-See https://github.com/jump-cellpainting/JUMP-Target/pull/34 for details about the standardization.
+See <https://github.com/jump-cellpainting/JUMP-Target/pull/34> for details about the standardization.
 
 [`JUMP-Target-1_compound_platemap.tsv`](JUMP-Target-1_compound_platemap.tsv)
 [`JUMP-Target-2_compound_platemap.tsv`](JUMP-Target-2_compound_platemap.tsv)
+[`JUMP-Target-3_compound_platemap.tsv`](JUMP-Target-3_compound_platemap.tsv)
 
 | Column | Description |
 | :----- | :---------- |
@@ -67,16 +69,16 @@ See https://github.com/jump-cellpainting/JUMP-Target/pull/34 for details about t
 | broad_sample | Compound ID in Broad Institute's compound management database |
 | solvent | Solvent (always DMSO) |
 
-
 ### Broad internal notes
+
 - [301](https://github.com/jump-cellpainting/JUMP-Target/issues/9) compounds
-- `JUMP-Target-1_Compound`: 
+- `JUMP-Target-1_Compound`:
   - Compound Request Number: CR-12417 - placed by Niranj Chandrasekaran - $10,404
   - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
 - `JUMP-Target-2_Compound`:
   - Compound Request Number: CR-12908 - placed by Niranj Chandrasekaran - $???
   - 5 milliMolar 13.75 uL total volume (5 uL dead volume)
-  - This plate was created because CDoT was unable to create plates with the same plate map as `JUMP-Target-1` for 
+  - This plate was created because CDoT was unable to create plates with the same plate map as `JUMP-Target-1` for
     the production experiments. Thus, the compounds in `JUMP-Target-2` are identical to the compounds in `JUMP-Target-1` but the plate maps are different. The `broad sample` IDs of some compounds are also different.
     - To map the compounds in `JUMP-Target-1` to `JUMP-Target-2` use `InChIKey` for "joining".
 
@@ -90,10 +92,12 @@ There are 335 sgRNAs (corresponding to 175 genes) in total, of which 88 sgRNAs a
 1. `negcon`: 30 unique sgRNAs that serve as negative controls because they are either non-targeting (`NO_SITE`) or target intergenic region (`ONE_INTERGENIC_SITE`). `negcon` sgRNAs have an additional annotation e.g. `NO_SITE (5 zeros)`. The number of zeros indicates how deep into the ["threat matrix"](https://portals.broadinstitute.org/gpp/public/software/sgrna-scoring-help#spec) a particular sgRNA makes it before a single match is found. An sgRNA `negcon` with higher number of zeros is less likely to have off-target effects and therefore may be a better negative control.
 
 For the remaining treatment genes (non-controls):
+
 - 117 genes have 2 sgRNAs each
 - 13 genes have 1 sgRNA each
 
 There are
+
 - n=2 replicate wells for each of `negcon`s, as well as for 1 `poscon_cp` sgRNA, 1 `poscon_orf` sgRNA, and 13 other sgRNAs
 - n=1 well for each remaining sgRNAs
 - n=4 empty wells
@@ -118,7 +122,6 @@ There are
 | well_position | Well position |
 | broad_sample | sgRNA id in Broad Institute's Genetic Perturbation Platform database |
 
-
 ## JUMP-Target-ORF
 
 There are 175 ORFs (corresponding to 175 genes) in total, of which 45 ORFs (corresponding to 45 genes) are included as controls serving different goals and 130 genes are represented in duplicate on the plate.
@@ -131,6 +134,7 @@ All genes have a single corresponding ORF
 1. `negcon`: genes that have had weak signatures in previous Cell Painting overexpression experiments. Total: 15 genes.
 
 There are
+
 - n=2 replicate wells for each of the 30 poscons
 - n=4 replicate wells for each of the 15 negcons
 - n=2 wells for each remaining ORF (130 of them)
@@ -166,26 +170,27 @@ The list of compounds were derived from [Broad's Drug Repurposing Hub](https://c
 5. To ensure that the compounds and genes selected were available for performing experiments, compounds that were unavailable for purchase from at least one of four compound vendors (Sigma, SelleckChem, Tocris, and MedChemEx) and genes for which genetic reagents were unavailable from [Broad's GPP portal](https://portals.broadinstitute.org/gpp/public/) were filtered out.
 6. Compounds that belong to DEA's list of controlled substances or OPCW's list of chemical weapons precursors were also excluded.
 
---- 
+-----
 
 ## Positive control compounds
 
-Based on our experiments with the Target-1 compounds plates, we have identified a list of eight compounds (and also a subset of four compounds) with maximally diverse phenotypes. 
+Based on our experiments with the Target-1 compounds plates, we have identified a list of eight compounds (and also a subset of four compounds) with maximally diverse phenotypes.
 
-| pert_iname    | InChIKey                    | Vendor URL                                             | clue.io URL                                          | 
-| ------------- | --------------------------- | ------------------------------------------------------ | ---------------------------------------------------- | 
-| **AMG900**    | IVUGFMLRJOCGAS-UHFFFAOYSA-N | https://www.selleckchem.com/products/amg-900.html      | https://clue.io/repurposing-app?q=Name:AMG900        | 
-| NVS-PAK1-1    | OINGHOPGNMYCAB-INIZCTEOSA-N | https://www.medchemexpress.com/NVS-PAK1-1.html         | https://clue.io/repurposing-app?q=Name:NVS-PAK1-1    | 
-| dexamethasone | UREBDLICKHMUKA-CXSFZGCWSA-N | https://www.tocris.com/products/dexamethasone_1126     | https://clue.io/repurposing-app?q=Name:dexamethasone | 
-| **LY2109761** | IHLVSLOZUHKNMQ-UHFFFAOYSA-N | https://www.selleckchem.com/products/ly2109761.html    | https://clue.io/repurposing-app?q=Name:LY2109761     | 
-| FK-866        | KPBNHDGDUADAGP-VAWYXSNFSA-N | https://www.selleckchem.com/products/apo866-fk866.html | https://clue.io/repurposing-app?q=Name:FK-866        |
-| **quinidine** | LOUPRKONTZGTKE-LHHVKLHASA-N | https://www.medchemexpress.com/Quinidine.html          | https://clue.io/repurposing-app?q=Name:quinidine     |
-| **TC-S-7004** | CQKBSRPVZZLCJE-UHFFFAOYSA-N | https://www.tocris.com/products/tc-s-7004_5088         | https://clue.io/repurposing-app?q=Name:TC-S-7004     |
-| aloxistatin   | SRVFFFJZQVENJC-IHRRRGAJSA-N | https://www.medchemexpress.com/Aloxistatin.html        | https://clue.io/repurposing-app?q=Name:aloxistatin   |
+| pert_iname    | InChIKey                    | Vendor URL                                             | clue.io URL                                          |
+| ------------- | --------------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
+| **AMG900**    | IVUGFMLRJOCGAS-UHFFFAOYSA-N | <https://www.selleckchem.com/products/amg-900.html>      | <https://clue.io/repurposing-app?q=Name:AMG900>        |
+| NVS-PAK1-1    | OINGHOPGNMYCAB-INIZCTEOSA-N | <https://www.medchemexpress.com/NVS-PAK1-1.html>         | <https://clue.io/repurposing-app?q=Name:NVS-PAK1-1>    |
+| dexamethasone | UREBDLICKHMUKA-CXSFZGCWSA-N | <https://www.tocris.com/products/dexamethasone_1126>     | <https://clue.io/repurposing-app?q=Name:dexamethasone> |
+| **LY2109761** | IHLVSLOZUHKNMQ-UHFFFAOYSA-N | <https://www.selleckchem.com/products/ly2109761.html>    | <https://clue.io/repurposing-app?q=Name:LY2109761>     |
+| FK-866        | KPBNHDGDUADAGP-VAWYXSNFSA-N | <https://www.selleckchem.com/products/apo866-fk866.html> | <https://clue.io/repurposing-app?q=Name:FK-866>        |
+| **quinidine** | LOUPRKONTZGTKE-LHHVKLHASA-N | <https://www.medchemexpress.com/Quinidine.html>          | <https://clue.io/repurposing-app?q=Name:quinidine>     |
+| **TC-S-7004** | CQKBSRPVZZLCJE-UHFFFAOYSA-N | <https://www.tocris.com/products/tc-s-7004_5088>         | <https://clue.io/repurposing-app?q=Name:TC-S-7004>     |
+| aloxistatin   | SRVFFFJZQVENJC-IHRRRGAJSA-N | <https://www.medchemexpress.com/Aloxistatin.html>        | <https://clue.io/repurposing-app?q=Name:aloxistatin>   |
 
-Compound names in **bold** is the subset of four compounds. 
+Compound names in **bold** is the subset of four compounds.
 
 ### Layout
+
 Our recommendation is to have at least four replicates of the eight (or four) compounds spread across the plate. If such a layout is not possible, then we recommend the following for a 384-well plate.
 
 | pert_iname    | well_position    |
@@ -202,7 +207,6 @@ Our recommendation is to have at least four replicates of the eight (or four) co
 For a 1536-well plate, the layout is similar, but in four quadrants.
 
 ## Control mappings
-
 
 ### poscon_diverse
 
